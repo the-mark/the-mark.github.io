@@ -8,6 +8,7 @@
             <marquee scrollamount="20">The Mark: Like the Every Three Weekly... But Funny</marquee>
         </header>
     </body>
+    <img id="logo" src="./themark.png"/>
 
     <div class="content" >
 
@@ -36,4 +37,24 @@
 		font-size:300px;
 		transition:3s;
 	}
+	#logo {
+		position:absolute;
+		top:0;
+		bottom:0;
+	}
 </style>
+
+<script type="text/javascript">
+		window.onload = mounted;
+		function mounted() {
+			showImage();
+		}
+		function showImage() {
+			document.getElementById("logo").style.display="block";
+			setTimeout(hideImage, 250);
+		}
+		function hideImage() {
+			document.getElementById("logo").style.display="none";
+			setTimeout(showImage, 10000);
+		}
+</script>
