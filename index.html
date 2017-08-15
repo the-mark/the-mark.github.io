@@ -11,9 +11,7 @@
     <img id="logo" src="./themark.png"/>
 
     <div class="content" >
-
         ASDFASDFDSAFDDS
-
     </div>
 
     <div class="content">
@@ -45,13 +43,13 @@
 </style>
 
 <script type="text/javascript">
-		window.onload = mounted;
+		window.onload = mounted();
 		function mounted() {
 			showImage();
 		}
 		function showImage() {
 			document.getElementById("logo").style.display="block";
-			setTimeout(hideImage, 250);
+			setTimeout(hideImage, 100);
 		}
 		function hideImage() {
 			document.getElementById("logo").style.display="none";
