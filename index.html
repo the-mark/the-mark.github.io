@@ -45,7 +45,7 @@
 <script type="text/javascript">
 		window.onload = mounted();
 		function mounted() {
-			showImage();
+			hideImage();
 		}
 		function showImage() {
 			document.getElementById("logo").style.display="block";
@@ -53,6 +53,6 @@
 		}
 		function hideImage() {
 			document.getElementById("logo").style.display="none";
-			setTimeout(showImage, 10000);
+			setTimeout(showImage, 60000);
 		}
 </script>
